@@ -438,3 +438,273 @@ footer {
 footer p {
     text-align: center;
 }
+
+#timeline {
+
+    position: relative;
+
+}
+
+ 
+
+.timeline-container {
+
+    position: relative;
+
+    max-width: 900px;
+
+    margin: 3rem auto 0;
+
+    padding: 0 1rem;
+
+}
+
+ 
+
+.timeline-container::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: 20px;
+
+    top: 0;
+
+    bottom: 0;
+
+    width: 3px;
+
+    background: rgb(163, 163, 163);
+
+}
+
+ 
+
+.timeline-item {
+
+    position: relative;
+
+    display: flex;
+
+    width: 100%;
+
+    justify-content: flex-start;
+
+    align-items: flex-start;
+
+    gap: 1.25rem;
+
+    margin-bottom: 1.75rem;
+
+}
+
+ 
+
+.timeline-dot {
+
+    width: 16px;
+
+    height: 16px;
+
+    border-radius: 50%;
+
+    background: rgb(53, 53, 53);
+
+    border: 3px solid white;
+
+    box-shadow: 0 0 0 2px rgb(163, 163, 163);
+
+    margin-left: 12px;
+
+    margin-top: 0.4rem;
+
+    flex-shrink: 0;
+
+}
+
+ 
+
+.timeline-content {
+
+    background: rgb(250, 250, 250);
+
+    border: rgb(163, 163, 163) 0.1rem solid;
+
+    border-radius: 1rem;
+
+    padding: 1rem 1.25rem;
+
+    text-align: left;
+
+    flex: 1;
+
+}
+
+ 
+
+.timeline-content p {
+
+    line-height: 1.5;
+
+}
+
+ 
+
+.timeline-header {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 1rem;
+
+    margin-bottom: 0.75rem;
+
+}
+
+ 
+
+.timeline-heading {
+
+    flex: 1;
+
+    order: 1;
+
+}
+
+ 
+
+.timeline-logo {
+
+    width: 120px;
+
+    height: 68px;
+
+    object-fit: contain;
+
+    flex-shrink: 0;
+
+    order: 2;
+
+}
+
+ 
+
+.timeline-meta {
+
+    font-weight: 600;
+
+    margin-bottom: 0;
+
+}
+
+ 
+
+.timeline-list {
+
+    padding-left: 1.1rem;
+
+}
+
+ 
+
+.timeline-list li {
+
+    margin-bottom: 0.6rem;
+
+    line-height: 1.45;
+
+    color: rgb(85, 85, 85);
+
+}
+
+ 
+
+.timeline-date {
+
+    font-weight: 600;
+
+    color: rgb(53, 53, 53);
+
+    margin-bottom: 0.35rem;
+
+}
+
+ 
+
+.timeline-content h3 {
+
+    font-size: 1.15rem;
+
+    margin-bottom: 0.5rem;
+
+}
+
+ 
+
+/* Project */
+
+ 
+
+#projects {
+
+    position: relative;
+
+}
+
+ 
+
+.color-container {
+
+    border-color: rgb(163, 163, 163);
+
+    background: rgb(250,250,250);
+
+}
+
+ 
+
+.project-img {
+
+    border-radius: 2rem;
+
+    width: 90%;
+
+    height: 90%;
+
+}
+
+ 
+
+.project-title {
+
+    margin: 1rem;
+
+    color: black;
+
+}
+
+ 
+
+.project-summary {
+
+    text-align: left;
+
+    line-height: 1.45;
+
+    margin: 0 1rem 1rem;
+
+}
+
+ 
+
+.project-btn {
+
+    color: black;
+
+    border-color: rgb(163, 163, 163);
+
+}
