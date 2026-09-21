@@ -1,176 +1,290 @@
-@media screen and (max-width:1400px) {
-    #profile {
-        height: 82vh;
-        margin-bottom: 6rem;
-    }
-    .about-containers {
-        flex-wrap: wrap;
-    }
-    #contact, #projects {
-        height: fit-content;
-    }
+/* =========================================
+   GLOBAL
+========================================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 
+/* =========================================
+   BASE SECTION SETTINGS
+========================================= */
 
-@media screen and (max-width:1200px) {
-    #desktop-nav {
-        display: none;
-    }
-    #ham-nav {
-        display: flex;
-    }
-    #experience,
+section {
+  height: fit-content;
+}
+
+
+/* =========================================
+   LARGE DESKTOP
+   1200px and above
+========================================= */
+
+@media screen and (min-width: 1200px) {
+
+  section {
+    margin: 0 5rem;
+    height: fit-content;
+  }
+
+  #profile,
+  #about,
+  #experience,
+  #projects,
+  #contact {
+    height: fit-content;
+  }
+
+  .timeline-container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin-top: 2rem;
+  }
+}
+
+
+/* =========================================
+   TABLET
+   801px - 1199px
+========================================= */
+
+@media screen and (min-width: 801px) and (max-width: 1199px) {
+
+  #desktop-nav {
+    display: none;
+  }
+
+  #ham-nav {
+    display: flex;
+  }
+
+  #experience,
   .experience-details-container {
     margin-top: 2rem;
   }
+
   #profile,
   .section-container {
     display: block;
   }
+
+  #profile {
+    height: fit-content;
+    min-height: 0;
+    margin-bottom: 2rem;
+  }
+
   .arrow {
     display: none;
   }
+
   section,
   .section-container {
     height: fit-content;
   }
+
   section {
     margin: 0 5%;
   }
+
   .section__pic-container {
     width: 275px;
     height: 275px;
     margin: 0 auto 2rem;
   }
+
   .about-containers {
     margin-top: 0;
   }
+
+  .timeline-container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 0.25rem;
+    margin-top: 2rem;
+  }
 }
 
+
+/* =========================================
+   MOBILE
+   800px and below
+========================================= */
+
 @media screen and (max-width: 800px) {
-    
 
   #contact,
   footer {
     height: 40vh;
   }
+
   #profile {
-    height: 83vh;
-    margin-bottom: 0;
+    height: fit-content;
+    min-height: 0;
+    margin-bottom: 2rem;
   }
+
   article {
     font-size: 1rem;
   }
+
   footer nav {
     height: fit-content;
     margin-bottom: 2rem;
   }
+
   .about-containers,
   .contact-info-upper-container,
   .btn-container {
     flex-wrap: wrap;
   }
+
   .contact-info-container {
     margin: 0;
   }
+
   .contact-info-container p,
   .nav-links li a {
     font-size: 1rem;
   }
+
   .experience-sub-title {
     font-size: 1.25rem;
   }
+
   .logo {
     font-size: 1.5rem;
   }
+
   .nav-links {
     flex-direction: column;
     gap: 0.5rem;
     text-align: center;
   }
-  .section-pic{
+
+  .section-pic {
     width: auto;
     height: 46vw;
     justify-content: center;
   }
+
   .section_p2 {
     font-size: 1.25rem;
   }
+
   .title {
     font-size: 2rem;
   }
+
   .text-container {
     text-align: justify;
   }
+
   .section-containers {
     flex-direction: column;
     align-items: center;
-}
+  }
 
-.about-details-containers {
+  .about-details-containers {
     width: 100%;
     padding: 0 1rem;
-}
+  }
 
-.about-containers {
+  .about-containers {
     flex-direction: column;
     width: 100%;
     gap: 1rem;
-}
+  }
 
-.details-containers {
+  .details-containers {
     width: 100%;
+  }
+
+  /* Mobile timeline */
+  .timeline-container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 0.25rem;
+    margin-top: 2rem;
+  }
+
+  .timeline-container::before {
+    left: 14px;
+  }
+
+  .timeline-item {
+    gap: 0.85rem;
+  }
+
+  .timeline-dot {
+    margin-left: 6px;
+  }
+
+  .timeline-content h3 {
+    font-size: 1rem;
+  }
 }
 
-}
+
+/* =========================================
+   TIMELINE
+========================================= */
 
 #timeline,
-
 #timeline .timeline-container {
-
   height: fit-content;
-
 }
-
- 
 
 .timeline-container {
-
+  width: 100%;
   margin-top: 2rem;
-
-  padding: 0 0.25rem;
-
 }
-
- 
 
 .timeline-container::before {
-
   left: 14px;
-
 }
-
- 
 
 .timeline-item {
-
   gap: 0.85rem;
-
 }
-
- 
 
 .timeline-dot {
-
   margin-left: 6px;
-
 }
 
- 
-
 .timeline-content h3 {
-
   font-size: 1rem;
+}
 
+
+/* =========================================
+   EXTRA PROTECTION AGAINST LARGE GAPS
+========================================= */
+
+@media screen and (min-width: 1200px) {
+
+  #profile {
+    height: fit-content;
+    min-height: 0;
+    margin-bottom: 2rem;
+  }
+
+  #about {
+    height: fit-content;
+    min-height: 0;
+    margin-bottom: 2rem;
+  }
+
+  #experience {
+    height: fit-content;
+    min-height: 0;
+  }
+
+  #experience .experience-details-container {
+    margin-top: 2rem;
+  }
 }

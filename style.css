@@ -305,7 +305,7 @@ section {
 .section-containers {
     display: flex;
     gap: 4rem;
-    height: 80%;
+    height: auto;
     
     justify-content: center; 
     
